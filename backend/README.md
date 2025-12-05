@@ -28,6 +28,7 @@ Este projeto foi desenvolvido como trabalho final do curso de Python, implementa
 1. **Clonar repositório:**
 
 git clone https://github.com/Melizzano/sistema-chamada-alunos.git
+
 cd sistema-chamada-alunos
 
 2. **Criar ambiente virtual:**
