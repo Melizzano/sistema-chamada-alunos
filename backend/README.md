@@ -27,30 +27,30 @@ Este projeto foi desenvolvido como trabalho final do curso de Python, implementa
 
 1. **Clonar repositório:**
 
-git clone https://github.com/Melizzano/sistema-chamada-alunos.git
+    1.1 git clone https://github.com/Melizzano/sistema-chamada-alunos.git
 
-cd sistema-chamada-alunos
+    1.2 cd sistema-chamada-alunos
 
 2. **Criar ambiente virtual:**
 
-python -m venv venv
+    2.1 python -m venv venv
 
-venv\Scripts\activate  # Windows
+    2.2 venv\Scripts\activate  # Windows
 
 3. **Instalar dependências:**
 
-cd backend
+    3.1 cd backend
 
-pip install -r requirements.txt
+    3.2 pip install -r requirements.txt
 
-pip install -r requirements_prod.tx
+    3.3 pip install -r requirements_prod.tx
 
 4. **Configurar banco de dados:**
 
-python manage.py migrate
+    4.1 python manage.py migrate
 
-python manage.py createsuperuser
+    4.2 python manage.py createsuperuser
 
 5. **Executar servidor:**
 
-python manage.py runserver
+    5.1 python manage.py runserver
