@@ -34,16 +34,19 @@ cd sistema-chamada-alunos
 2. **Criar ambiente virtual:**
 
 python -m venv venv
+
 venv\Scripts\activate  # Windows
 
 3. **Instalar dependências:**
 
 cd backend
+
 pip install -r requirements.txt
 
 4. **Configurar banco de dados:**
 
 python manage.py migrate
+
 python manage.py createsuperuser
 
 5. **Executar servidor:**
