@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: sistema-chamada-alunos
+    env: python
+    buildCommand: "./backend/build.sh"
+    startCommand: "gunicorn config.wsgi_prod:application --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        fromDatabase:
+          name: chamada_db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: ALLOWED_HOSTS
+        value: "sistema-chamada-alunos.onrender.com,localhost,127.0.0.1"
+      - key: CORS_ALLOWED_ORIGINS
+        value: "https://sistema-chamada-alunos.onrender.com,http://localhost:3000"
+
+databases:
+  - name: chamada_db
+    databaseName: chamada
+    user: chamada_user
+    plan: free
