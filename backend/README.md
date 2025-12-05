@@ -42,6 +42,7 @@ venv\Scripts\activate  # Windows
 cd backend
 
 pip install -r requirements.txt
+
 pip install -r requirements_prod.tx
 
 4. **Configurar banco de dados:**
